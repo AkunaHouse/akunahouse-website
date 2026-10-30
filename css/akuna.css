@@ -312,3 +312,10 @@ form.enquiry .ok{display:none;background:var(--pale-teal);color:var(--marine);bo
   .foot-grid{grid-template-columns:1fr}
   .sop{grid-template-columns:1fr}
 }
+
+.bio-photo{width:100%;max-width:440px;aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block;margin:0 auto}
+.team-row{margin-top:56px}
+.team-card{display:flex;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:4px;padding:28px;max-width:640px}
+.team-mark{width:120px;height:120px;flex:none;border-radius:50%;background:#f4fbfa;display:flex;align-items:center;justify-content:center}
+.team-mark img{width:84px}
+@media (max-width:600px){.team-card{flex-direction:column;text-align:center}}
