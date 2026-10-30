@@ -3,308 +3,207 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Akuna LLC Government Contracts</title>
-<meta name="description" content="Akuna LLC is a small-business prime contractor for government events, lodging and meetings. SAM.gov registered. Firm fixed price, WAWF invoicing.">
+<title>Akuna LLC · Government event, lodging & contract management</title>
+<meta name="description" content="Akuna LLC is a contract management firm for government events, lodging and meetings. Small business prime contractor, SAM.gov registered. Yellow Ribbon events, lodging blocks, conferences and retreats.">
+<link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#132238;
-  --ink-2:#1d3150;
-  --paper:#f4f5f2;
-  --card:#ffffff;
-  --text:#1a2230;
-  --muted:#5b6575;
-  --line:#d9dde3;
-  --signal:#e3a33a;
-  --signal-ink:#7a4d05;
-  --on-ink:#eef2f7;
-  --on-ink-muted:#a8b4c6;
-  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
-  --body:"IBM Plex Sans",Arial,Helvetica,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
-  color-scheme:light;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#0f1726;--card:#16213a;--text:#e6ebf2;--muted:#9aa6b8;--line:#2a3854;--signal-ink:#f0bd63;color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#0f1726;--card:#16213a;--text:#e6ebf2;--muted:#9aa6b8;--line:#2a3854;--signal-ink:#f0bd63;color-scheme:dark;
-}
-*{box-sizing:border-box}
-html,body{margin:0}
-body{background:var(--paper);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6}
-a{color:inherit}
-a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--display);text-wrap:balance;letter-spacing:.01em;margin:0}
-.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
-.top{background:var(--ink);color:var(--on-ink);border-bottom:1px solid rgba(255,255,255,.08)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
-.brand{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none}
-.brand span{color:var(--signal)}
-.top nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}
-.top nav a{text-decoration:none;color:var(--on-ink-muted)}
-.top nav a:hover{color:var(--on-ink)}
-.hero{background:var(--ink);color:var(--on-ink);padding:56px 0 64px}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
-.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--signal);margin:0 0 14px}
-.hero h1{font-size:clamp(44px,6vw,76px);line-height:.98;font-weight:700;text-transform:uppercase}
-.hero p.lede{font-size:19px;color:var(--on-ink-muted);max-width:34em;margin:22px 0 28px}
-.cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 22px;font-weight:600;text-decoration:none;border-radius:3px;font-size:16px}
-.btn.primary{background:var(--signal);color:#1b1404}
-.btn.ghost{border:1px solid rgba(255,255,255,.3);color:var(--on-ink)}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;padding:0;list-style:none}
-.badges li{font-family:var(--mono);font-size:12.5px;padding:6px 10px;border:1px solid rgba(255,255,255,.18);border-radius:2px;color:var(--on-ink-muted)}
-.runsheet{background:var(--ink-2);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:22px 22px 10px}
-.runsheet header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px dashed rgba(255,255,255,.2);padding-bottom:12px;margin-bottom:6px}
-.runsheet h2{font-size:22px;text-transform:uppercase;letter-spacing:.05em}
-.runsheet header span{font-family:var(--mono);font-size:12px;color:var(--on-ink-muted)}
-.runsheet ol{list-style:none;margin:0;padding:0}
-.runsheet li{display:grid;grid-template-columns:62px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:15px}
-.runsheet li:last-child{border-bottom:0}
-.runsheet time{font-family:var(--mono);color:var(--signal);font-variant-numeric:tabular-nums}
-.runsheet small{display:block;color:var(--on-ink-muted);font-size:13px}
-section.block{padding:72px 0;border-bottom:1px solid var(--line)}
-.sec-head{display:grid;grid-template-columns:260px 1fr;gap:32px;margin-bottom:36px}
-.sec-head h2{font-size:40px;text-transform:uppercase;line-height:1}
-.sec-head p{margin:0;color:var(--muted);max-width:40em}
-.grid{display:grid;gap:20px}
-.grid.four{grid-template-columns:repeat(4,1fr)}
-.grid.two{grid-template-columns:repeat(2,1fr)}
-.svc{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--signal);padding:22px;border-radius:3px;display:flex;flex-direction:column;gap:10px}
-.svc h3{font-size:24px;line-height:1.1;text-transform:uppercase}
-.svc p{margin:0;color:var(--muted);font-size:15.5px}
-.svc ul{margin:0;padding-left:18px;font-size:15px}
-.codes{font-family:var(--mono);font-size:12.5px;color:var(--signal-ink);margin-top:auto;padding-top:8px}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:0;padding:0;border-top:2px solid var(--text)}
-.steps li{padding:22px 20px 8px 0;counter-increment:s}
-.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);color:var(--signal-ink);font-size:14px;display:block;margin-bottom:8px}
-.steps h3{font-size:24px;text-transform:uppercase;margin-bottom:6px}
-.steps p{margin:0;color:var(--muted);font-size:15.5px;padding-right:12px}
-.exp{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.exp li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}
-.exp li:first-child{border-top:1px solid var(--line)}
-.exp .k{font-family:var(--mono);font-size:13px;color:var(--signal-ink);padding-top:3px}
-.exp strong{display:block;font-weight:600}
-.exp span{color:var(--muted);font-size:15.5px}
-.sheet{background:var(--card);border:1px solid var(--line);border-radius:3px;overflow-x:auto}
-.sheet table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
-.sheet th,.sheet td{text-align:left;padding:12px 18px;border-bottom:1px solid var(--line);vertical-align:top}
-.sheet th{width:230px;font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.05em}
-.sheet tr:last-child th,.sheet tr:last-child td{border-bottom:0}
-.naics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;margin:0;padding:0;list-style:none}
-.naics b{font-family:var(--mono);font-weight:500;color:var(--signal-ink);margin-right:8px}
-.todo{font-family:var(--mono);font-size:13px;background:rgba(227,163,58,.18);padding:2px 6px;border-radius:2px}
-.contact{background:var(--ink);color:var(--on-ink);padding:64px 0}
-.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.contact h2{font-size:48px;text-transform:uppercase;line-height:1}
-.contact p{color:var(--on-ink-muted)}
-.card-c{border:1px solid rgba(255,255,255,.18);padding:24px;border-radius:3px;display:grid;gap:10px}
-.card-c div{display:grid;grid-template-columns:90px 1fr;gap:12px}
-.card-c dt{font-family:var(--mono);font-size:12.5px;color:var(--on-ink-muted);text-transform:uppercase;padding-top:3px}
-.card-c dd{margin:0;font-size:17px}
-.card-c a{color:var(--on-ink)}
-footer{background:var(--ink);color:var(--on-ink-muted);font-size:13px;padding:0 0 28px}
-footer .wrap{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-@media (max-width:900px){
-  .hero .wrap,.contact .wrap{grid-template-columns:1fr}
-  .sec-head{grid-template-columns:1fr;gap:12px}
-  .grid.four{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:560px){
-  .grid.four,.grid.two,.steps{grid-template-columns:1fr}
-  .exp li{grid-template-columns:1fr;gap:4px}
-  .naics{grid-template-columns:1fr}
-  .top nav{gap:14px}
-}
-@media (prefers-reduced-motion:no-preference){
-  .runsheet li{animation:rise .5s ease both}
-  .runsheet li:nth-child(2){animation-delay:.06s}.runsheet li:nth-child(3){animation-delay:.12s}
-  .runsheet li:nth-child(4){animation-delay:.18s}.runsheet li:nth-child(5){animation-delay:.24s}
-  .runsheet li:nth-child(6){animation-delay:.3s}.runsheet li:nth-child(7){animation-delay:.36s}
-  @keyframes rise{from{transform:translateY(6px);opacity:.35}to{transform:none;opacity:1}}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Jost:wght@200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/akuna.css">
 </head>
-<body>
-
-<div class="top">
+<body class="">
+<header class="site-head">
   <div class="wrap">
-    <a class="brand" href="index.html">Akuna <span>LLC</span></a>
-    <nav aria-label="Sections">
-      <a href="index.html">Home</a>
-      <a href="#services">Services</a>
-      <a href="#delivery">How we deliver</a>
-      <a href="#experience">Experience</a>
-      <a href="#company-data">Company data</a>
-      <a href="#contact">Contact</a>
+    <a class="brand" href="index.html" aria-label="Akuna home"><span>Akuna</span><img src="img/flowmark.png" alt=""></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <div class="dd">
+        <a href="business.html" class="dd-top on">Services</a>
+        <div class="dd-menu">
+          <a href="business.html">Akuna Business</a>
+          <a href="contracting.html" aria-current="page">Government contracting</a>
+          <a href="body.html">Akuna Body</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
-</div>
+</header>
+<main>
 
-<header class="hero">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">Contract management · Government events, lodging &amp; meetings</p>
-      <h1>One accountable prime for the whole event.</h1>
-      <p class="lede">Akuna LLC holds the contract and runs the day: venue, meals, AV, lodging and parking, sourced from vetted local partners and managed on site by the owner. Firm fixed price, compliant quotes, invoicing through WAWF.</p>
-      <div class="cta">
-        <a class="btn primary" href="#contact">Request a quote</a>
-        <a class="btn ghost" href="#company-data">Company data &amp; NAICS</a>
-      </div>
-      <ul class="badges" aria-label="Status">
-        <li>Small business</li>
-        <li>SAM.gov registered</li>
-        <li>Prime contractor</li>
-        <li>Nationwide · based in the SF Bay Area</li>
-      </ul>
-    </div>
-
-    <aside class="runsheet" aria-label="Example event-day run of show">
-      <header>
-        <h2>Event day · run of show</h2>
-        <span>800 attendees · example</span>
-      </header>
+<section class="page-hero"><img class="ghost-mark" src="img/flowmark.png" alt="">
+  <div class="wrap hero-split">
+    <div><p class="label">Akuna · Contract management</p>
+      <h1 style="margin-top:16px">Your event and lodging experts. Any size. Any location.</h1>
+      <p class="lede">Akuna LLC is a contract management firm for government events, lodging and meetings. We hold the contract, source the venue, meals, AV and rooms from vetted local partners, and manage every detail on site — saving your team the time, money and headaches of doing it yourself.</p>
+      <div class="hats"><span>Small business</span><span>SAM.gov registered</span><span>Prime contractor</span><span>Nationwide</span></div>
+      <div class="btn-row"><a class="btn" href="#quote">Request a quote</a><a class="btn ghost" href="#capability">Capability statement</a></div></div>
+    <div class="runsheet">
+      <div class="rs-head"><h4>Event day · run of show</h4><span>Example · 800 attendees</span></div>
       <ol>
         <li><time>06:30</time><div>Room set, AV and mic check<small>Technician on site until close</small></div></li>
-        <li><time>07:00</time><div>Doors, registration support, coffee, tea, water<small>Beverages running all day</small></div></li>
+        <li><time>07:00</time><div>Doors, registration, coffee, tea, water<small>Beverages running all day</small></div></li>
         <li><time>08:00</time><div>General session<small>Main room divided into three briefing areas</small></div></li>
-        <li><time>11:30</time><div>Buffet lunch in the main room<small>Seating for all attendees; dietary options labelled</small></div></li>
+        <li><time>11:30</time><div>Buffet lunch<small>Seating for all; dietary options labelled</small></div></li>
         <li><time>13:00</time><div>Breakouts and vendor tables<small>Childcare room adjacent</small></div></li>
         <li><time>17:00</time><div>Close and breakdown<small>Headcount and meal records to the COR</small></div></li>
       </ol>
-    </aside>
-  </div>
-</header>
-
-<main>
-<section class="block" id="services">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Services</h2>
-      <p>Four service lines for military units and federal agencies. Each is delivered as a single firm-fixed-price contract with Akuna as the prime and one point of contact from quote to close-out.</p>
-    </div>
-    <div class="grid four">
-      <article class="svc">
-        <h3>Yellow Ribbon &amp; family readiness events</h3>
-        <p>Pre-deployment, post-deployment and reintegration events for National Guard and Reserve units.</p>
-        <ul><li>Divisible general-session space</li><li>Buffet meals at per diem</li><li>Childcare rooms, vendor tables, parking</li></ul>
-        <div class="codes">NAICS 561990 · 721110 · PSC M1AB</div>
-      </article>
-      <article class="svc">
-        <h3>Conferences, training &amp; career fairs</h3>
-        <p>Agency conferences, industry days, training events and career fairs, sized from 50 to 1,000+.</p>
-        <ul><li>Venue sourcing and contracting</li><li>AV with on-site technician</li><li>Registration support and signage</li></ul>
-        <div class="codes">NAICS 561920 · 611430 · 541614</div>
-      </article>
-      <article class="svc">
-        <h3>Government lodging &amp; venue rental</h3>
-        <p>Room blocks, conference space and meeting rooms at or under the local GSA per diem.</p>
-        <ul><li>Lodging blocks near installations</li><li>Meeting space and parking</li><li>Single invoice, one contract</li></ul>
-        <div class="codes">NAICS 721110 · 531120 · 561599 · PSC X1AB</div>
-      </article>
-      <article class="svc">
-        <h3>Military &amp; family retreats</h3>
-        <p>Resiliency, family and airmen retreats: lodging, meals, meeting space and programme logistics.</p>
-        <ul><li>One- and two-night retreats</li><li>Meals and dietary planning</li><li>Activity and facilitator coordination</li></ul>
-        <div class="codes">NAICS 611699 · 722320 · 561320</div>
-      </article>
     </div>
   </div>
 </section>
 
-<section class="block" id="delivery">
+<nav class="subnav" aria-label="On this page"><div class="wrap">
+  <a href="#specialties">Specialties</a><a href="#lodging">Lodging</a><a href="#delivery">How we deliver</a><a href="#why">Why Akuna</a><a href="#credentials">Credentials</a><a href="#capability">Company data</a><a href="#partners">For venues</a><a href="#quote">Request a quote</a>
+</div></nav>
+
+<section id="specialties">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>How we deliver</h2>
-      <p>The same four stages on every contract, so the contracting officer and COR always know where the event stands.</p>
+    <div class="sec-head"><p class="label">Our specialties</p><h2>One accountable prime for the whole event.</h2>
+      <p>For National Guard and Reserve units, federal agencies, state offices and corporate teams. Each job is a single firm-fixed-price contract with one point of contact from quote to close-out.</p></div>
+    <div class="cards">
+      <div class="card"><span class="tag">NAICS 561990 · 721110 · PSC M1AB</span><h4>Yellow Ribbon &amp; family readiness events</h4><p>Pre-deployment, post-deployment and reintegration events: divisible general-session space, buffet meals at per diem, childcare rooms, vendor tables and parking.</p></div>
+      <div class="card"><span class="tag">NAICS 721110 · 561599 · 531120</span><h4>Government lodging</h4><p>Room blocks for units, work crews, travel and events, at or under the local GSA per diem — one contract, one invoice.</p></div>
+      <div class="card"><span class="tag">NAICS 561920 · 611430 · 541614</span><h4>Conferences, training &amp; career fairs</h4><p>Agency conferences, industry days, training events and career fairs, from 50 to 1,000+ attendees, with AV and an on-site technician.</p></div>
+      <div class="card"><span class="tag">NAICS 611699 · 722320 · 561320</span><h4>Chaplain, resiliency &amp; family retreats</h4><p>One- and two-night retreats for service members and families: lodging, meals, meeting space and programme logistics.</p></div>
+      <div class="card"><span class="tag">NAICS 531120 · PSC X1AB</span><h4>Meeting &amp; venue rental</h4><p>Conference rooms, banquet space and meeting facilities sourced, contracted and set to your requirements.</p></div>
+      <div class="card"><span class="tag">NAICS 541614 · 561990</span><h4>State &amp; agency meetings</h4><p>Board meetings, workshops and multi-day sessions for state offices and agencies, managed end to end.</p></div>
     </div>
-    <ol class="steps">
-      <li><h3>Quote</h3><p>Every requirement in the solicitation answered, priced by CLIN with an extended total, submitted early and receipt confirmed.</p></li>
-      <li><h3>Source</h3><p>Venue, caterer and AV secured in writing from local partners, with date holds and per diem pricing locked.</p></li>
-      <li><h3>Run</h3><p>Pre-performance meeting, setup and walkthrough the day before, owner on site from first setup to final breakdown.</p></li>
-      <li><h3>Close</h3><p>Headcount and meal records to the COR, invoice in WAWF after acceptance, partners paid promptly.</p></li>
-    </ol>
   </div>
 </section>
 
-<section class="block" id="experience">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Experience</h2>
-      <p>Kylie Morello, owner and on-site manager, brings more than two decades of running operations, launches and group events.</p>
-    </div>
-    <ul class="exp">
-      <li><div class="k">Since 2002</div><div><strong>Owner-operator of a multi-discipline fitness business</strong><span>Daily operations, staffing, vendors, scheduling and compliance for more than 20 years.</span></div></li>
-      <li><div class="k">Launches</div><div><strong>New-location openings</strong><span>Consulting on construction, pre-sales, grand-opening events and post-opening operations for new studio sites.</span></div></li>
-      <li><div class="k">Retreats</div><div><strong>Wellness retreats, including international</strong><span>Group lodging, meals, programme schedules and on-the-ground logistics.</span></div></li>
-      <li><div class="k">Software</div><div><strong>Mindbody Asia Pacific and US teams</strong><span>Early member of Mindbody's Asia Pacific team, later its US team, supporting businesses that run classes, bookings and events.</span></div></li>
-      <li><div class="k">Back office</div><div><strong>Bookkeeping and office services</strong><span>Akuna LLC provides bookkeeping and administration for small businesses, the same discipline applied to contract records and invoicing.</span></div></li>
-    </ul>
-  </div>
-</section>
-
-<section class="block" id="company-data">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Company data</h2>
-      <p>Details as registered in SAM.gov, for contracting officers and market research.</p>
-    </div>
-    <div class="sheet">
-      <table>
-        <tr><th scope="row">Legal name</th><td>Akuna LLC</td></tr>
-        <tr><th scope="row">UEI</th><td><span class="todo">Add from SAM.gov</span></td></tr>
-        <tr><th scope="row">CAGE code</th><td><span class="todo">Add from SAM.gov</span></td></tr>
-        <tr><th scope="row">Business type</th><td>Small business · prime contractor</td></tr>
-        <tr><th scope="row">Service area</th><td>Nationwide · based in the San Francisco Bay Area, California</td></tr>
-        <tr><th scope="row">NAICS codes</th><td>
-          <ul class="naics">
-            <li><b>561990</b>All Other Support Services</li>
-            <li><b>561320</b>Temporary Help Services</li>
-            <li><b>721110</b>Hotels and Motels</li>
-            <li><b>531120</b>Lessors of Nonresidential Buildings</li>
-            <li><b>561920</b>Convention and Trade Show Organizers</li>
-            <li><b>722320</b>Caterers</li>
-            <li><b>561599</b>Travel Arrangement and Reservation</li>
-            <li><b>541614</b>Logistics Consulting</li>
-            <li><b>611430</b>Professional Development Training</li>
-            <li><b>611699</b>All Other Schools and Instruction</li>
-          </ul>
-        </td></tr>
-        <tr><th scope="row">PSC codes</th><td class="mono">M1AB · X1AB</td></tr>
-        <tr><th scope="row">Payment</th><td>WAWF / PIEE invoicing · firm fixed price</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-</main>
-
-<section class="contact" id="contact">
-  <div class="wrap">
+<section class="tint" id="lodging">
+  <div class="wrap split">
     <div>
-      <p class="eyebrow">Request a quote</p>
-      <h2>Send the solicitation number.</h2>
-      <p>Include the event date, location and headcount. A venue shortlist and pricing approach come back within one business day.</p>
+      <p class="label">Government lodging</p>
+      <h2 style="margin-top:14px">Lodging for your people, without the hassle of procuring it.</h2>
+      <p style="margin-top:20px">Travel, work crews, meetings or events: Akuna handles the whole lodging requirement, so your team can stay on mission.</p>
+      <ul class="checks">
+        <li>Locate the right properties near the installation or venue</li>
+        <li>Negotiate rates at or under per diem and sign the hotel contracts</li>
+        <li>Manage rooming lists, changes and late arrivals</li>
+        <li>One invoice in WAWF after acceptance</li>
+      </ul>
     </div>
-    <dl class="card-c">
-      <div><dt>Contact</dt><dd>Kylie Morello, Owner</dd></div>
-      <div><dt>Email</dt><dd><a href="mailto:contracts@akunahouse.com">contracts@akunahouse.com</a></dd></div>
-      <div><dt>Phone</dt><dd><a href="tel:+16506806680">650-680-6680</a></dd></div>
-      <div><dt>Web</dt><dd><a href="index.html">akunahouse.com</a></dd></div>
-    </dl>
+    <div class="panel"><img class="pm" src="img/flowmark-white.png" alt=""><p class="label" style="color:#fff;opacity:.8">Any budget · any location</p><p class="q">We manage every aspect of your meeting or lodging requirement.</p></div>
   </div>
 </section>
-<footer>
+
+<section id="delivery">
   <div class="wrap">
-    <span>© 2026 Akuna LLC · Small business · SAM.gov registered</span>
-    <span>Contract management for government events, lodging and meetings</span>
+    <div class="sec-head"><p class="label">How we deliver</p><h2>The same four stages on every contract.</h2>
+      <p>So the contracting officer and COR always know where the event stands.</p></div>
+    <div class="flow">
+      <div class="step"><span class="dot">01</span><p class="tag">Quote</p><h4>Every requirement answered</h4><p>Priced by CLIN with an extended total, every amendment signed, submitted early and receipt confirmed.</p></div>
+      <div class="step"><span class="dot">02</span><p class="tag">Source</p><h4>Partners locked in</h4><p>Small-business venues, caterers and AV secured in writing, with date holds and per diem pricing.</p></div>
+      <div class="step"><span class="dot">03</span><p class="tag">Run</p><h4>Owner on site</h4><p>Pre-performance meeting and walkthrough, then on site from first setup to final breakdown.</p></div>
+      <div class="step"><span class="dot">04</span><p class="tag">Close</p><h4>Clean close-out</h4><p>Headcount and meal records to the COR, WAWF invoice after acceptance, partners paid promptly.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="why">
+  <div class="wrap">
+    <div class="sec-head"><p class="label">Why Akuna</p><h2>Twenty years of running events, openings and retreats.</h2></div>
+    <div class="stats">
+      <div><span class="big">20+</span><span>years in business operations, since 2002</span></div>
+      <div><span class="todo">##</span><span>events, launches and grand openings run</span></div>
+      <div><span class="todo">##%</span><span>client approval / retention</span></div>
+      <div><span class="big">1</span><span>point of contact: the owner, on site</span></div>
+    </div>
+    <div class="cards two" style="margin-top:40px">
+      <div class="card"><h4>Experience you can verify</h4><p>More than two decades running a multi-discipline fitness business: staffing, vendors, scheduling and compliance. Consulting on new-site construction, pre-sales and grand openings. Wellness retreats with group lodging, meals and on-the-ground logistics.</p></div>
+      <div class="card"><h4>What our clients say</h4><p><span class="todo">Add testimonials after each job — one from the COR, one from the venue, one from the caterer</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap">
+    <div class="sec-head"><p class="label">Certifications &amp; credentials</p><h2>Registered, trained and ready to award.</h2></div>
+    <div class="cards four">
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span><h4>SAM.gov registered</h4><p>Active registration. UEI CWQYA6FJMX33 · CAGE 238A7.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg></span><h4>Small business</h4><p>Eligible for total small business set-asides.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg></span><h4>Antiterrorism Level 1 · OPSEC</h4><p>Defense Department awareness training. <span class="todo">add once completed</span></p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span><h4>FEMA IS-100 · IS-700</h4><p>Emergency management basics. <span class="todo">add once completed</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="capability">
+  <div class="wrap">
+    <div class="sec-head"><p class="label">Company data</p><h2>For contracting officers and market research.</h2>
+      <div class="btn-row" style="margin-top:22px"><a class="btn ghost" href="#capability"><span class="todo">Capability statement PDF — to add</span></a></div></div>
+    <div class="sheet"><table>
+      <tr><th scope="row">Legal name</th><td>Akuna LLC</td></tr>
+      <tr><th scope="row">UEI</th><td>CWQYA6FJMX33</td></tr>
+      <tr><th scope="row">CAGE code</th><td>238A7</td></tr>
+      <tr><th scope="row">SAM.gov status</th><td>Active</td></tr>
+      <tr><th scope="row">Business type</th><td>Small business · prime contractor</td></tr>
+      <tr><th scope="row">Service area</th><td>Nationwide</td></tr>
+      <tr><th scope="row">NAICS codes</th><td><ul class="naics">
+        <li><b>561990</b>All Other Support Services</li><li><b>561320</b>Temporary Help Services</li>
+        <li><b>721110</b>Hotels and Motels</li><li><b>531120</b>Lessors of Nonresidential Buildings</li>
+        <li><b>561920</b>Convention and Trade Show Organizers</li><li><b>722320</b>Caterers</li>
+        <li><b>561599</b>Travel Arrangement and Reservation</li><li><b>541614</b>Logistics Consulting</li>
+        <li><b>611430</b>Professional Development Training</li><li><b>611699</b>All Other Schools and Instruction</li>
+        <li><b>541611</b>Administrative Management Consulting</li><li><b>713940</b>Fitness and Recreational Sports Centers</li></ul></td></tr>
+      <tr><th scope="row">PSC codes</th><td>M1AB · X1AB</td></tr>
+      <tr><th scope="row">Set-asides</th><td>Total small business</td></tr>
+      <tr><th scope="row">Payment</th><td>WAWF / PIEE invoicing · firm fixed price · Net 30</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="wrap split">
+    <div class="panel"><img class="pm" src="img/flowmark-white.png" alt=""><p class="label" style="color:#fff;opacity:.8">For hotels &amp; venues</p><p class="q">Fill rooms and halls with government business — we handle the contract.</p></div>
+    <div>
+      <p class="label">Partner with Akuna</p>
+      <h3 style="margin-top:14px">Hotels, venues, caterers and AV companies.</h3>
+      <p style="margin-top:16px">We bring you group bookings for government events and lodging, manage the paperwork and the client, and pay promptly. Small businesses especially welcome.</p>
+      <ul class="checks">
+        <li>Small business, ideally registered on SAM.gov</li>
+        <li>Clear all-in pricing per head, against local per diem</li>
+        <li>Access the day before for setup and walkthrough</li>
+      </ul>
+      <div class="btn-row"><a class="btn ghost" href="mailto:contracts@akunahouse.com?subject=Venue%20partner%20enquiry">Become a partner</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="quote"><img class="cm" src="img/flowmark-white.png" alt="">
+  <div class="wrap"><h2>Send the solicitation number.</h2>
+  <p>Include the event date, location and headcount. A venue shortlist and pricing approach come back within one business day — with a complimentary quote for any meeting, event, retreat or lodging need.</p>
+  <div class="btn-row"><a class="btn light" href="mailto:contracts@akunahouse.com?subject=Solicitation%20enquiry">Email contracts@akunahouse.com</a></div>
+  <p style="font-size:14px;margin-top:22px">Kylie Morello, Owner · 650-680-6680</p></div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span>Akuna</span><img src="img/flowmark.png" alt=""></a>
+        <p class="foot-tag"><b>Akuna ~</b> Find Your Flow Between Business<img class="om" src="img/om.png" alt=" Om ">Body</p>
+      </div>
+      <div><h5>Business</h5><ul>
+        <li><a href="business.html">Business services</a></li>
+        <li><a href="contracting.html">Government contracting</a></li></ul></div>
+      <div><h5>Body</h5><ul>
+        <li><a href="body.html#retreats">Wellness retreats</a></li>
+        <li><a href="body.html#classes">Corporate Pilates, yoga &amp; meditation</a></li></ul></div>
+      <div><h5>Akuna</h5><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="ack">
+      <span>Our name, Akuna, draws from the Dieri language of Australia. We acknowledge the Dieri people as its Traditional Custodians.</span>
+      <span>© 2026 Akuna LLC</span>
+    </div>
   </div>
 </footer>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});})();
+</script>
 </body>
 </html>

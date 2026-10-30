@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Akuna · Book a call</title>
+<meta name="description" content="Book a free 20-minute call with Akuna LLC, request a quote, or send through a solicitation.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Jost:wght@200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/akuna.css">
+</head>
+<body class="">
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Akuna home"><span>Akuna</span><img src="img/flowmark.png" alt=""></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <div class="dd">
+        <a href="business.html" class="dd-top">Services</a>
+        <div class="dd-menu">
+          <a href="business.html">Akuna Business</a>
+          <a href="contracting.html">Government contracting</a>
+          <a href="body.html">Akuna Body</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero"><img class="ghost-mark" src="img/flowmark.png" alt="">
+  <div class="wrap"><p class="label">Contact</p>
+  <h1 style="margin-top:16px">Let's find your flow.</h1>
+  <p class="lede">Book a free 20-minute call, request a quote, or send through a solicitation. You'll hear back from the owner within one business day.</p></div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <form class="enquiry" id="enquiry" novalidate>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>Organisation<input name="org" autocomplete="organization"></label>
+      <label>I'm interested in
+        <select name="interest" id="interest">
+          <option>A free 20-minute call</option>
+          <option>Government contracting</option>
+          <option>QuickBooks</option>
+          <option>Mindbody</option>
+          <option>Playbooks</option>
+          <option>Branding</option>
+          <option>Sales systems</option>
+          <option>Virtual assistants</option>
+          <option>IT &amp; admin</option>
+          <option>Corporate Pilates, yoga &amp; meditation</option>
+          <option>Wellness retreats</option>
+          <option>Something else</option>
+        </select></label>
+      <label>Message<textarea name="message" placeholder="A little about what you need — or a solicitation number"></textarea></label>
+      <button class="btn" type="submit" style="justify-content:center;border:0;cursor:pointer">Send enquiry</button>
+      <p class="note">This opens your email app with your message ready to send.</p>
+      <p class="ok" id="ok" role="status">Your email app should now be open with your message ready to send. If it didn't open, email contracts@akunahouse.com.</p>
+    </form>
+    <dl class="cinfo">
+      <div><dt>Owner</dt><dd>Kylie Morello</dd></div>
+      <div><dt>Company</dt><dd>Akuna LLC</dd></div>
+      <div><dt>Government</dt><dd><a href="contracting.html#capability">Company data, NAICS &amp; codes</a></dd></div>
+    </dl>
+  </div>
+</section>
+<script>
+(function(){
+  var f=document.getElementById('enquiry'),sel=document.getElementById('interest');
+  try{var i=new URLSearchParams(location.search).get('interest');
+    if(i){for(var k=0;k<sel.options.length;k++)if(sel.options[k].text===i)sel.selectedIndex=k}}catch(e){}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.name.value.trim()||!f.email.value.trim()){f.name.focus();return}
+    var s='Enquiry: '+sel.value+' — '+f.name.value.trim();
+    var b='Name: '+f.name.value.trim()+'\nEmail: '+f.email.value.trim()+'\nOrganisation: '+f.org.value.trim()+'\nInterested in: '+sel.value+'\n\n'+f.message.value;
+    document.getElementById('ok').style.display='block';
+    window.location.href='mailto:contracts@akunahouse.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);
+  });
+})();
+</script>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span>Akuna</span><img src="img/flowmark.png" alt=""></a>
+        <p class="foot-tag"><b>Akuna ~</b> Find Your Flow Between Business<img class="om" src="img/om.png" alt=" Om ">Body</p>
+      </div>
+      <div><h5>Business</h5><ul>
+        <li><a href="business.html">Business services</a></li>
+        <li><a href="contracting.html">Government contracting</a></li></ul></div>
+      <div><h5>Body</h5><ul>
+        <li><a href="body.html#retreats">Wellness retreats</a></li>
+        <li><a href="body.html#classes">Corporate Pilates, yoga &amp; meditation</a></li></ul></div>
+      <div><h5>Akuna</h5><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="ack">
+      <span>Our name, Akuna, draws from the Dieri language of Australia. We acknowledge the Dieri people as its Traditional Custodians.</span>
+      <span>© 2026 Akuna LLC</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});})();
+</script>
+</body>
+</html>
